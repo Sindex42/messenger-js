@@ -15,6 +15,6 @@ describe('Message', function () {
   })
 
   it('should create a message with a time of creation', function () {
-    expect(message.time).toEqual('00:00:00')
+    expect(message.time).toEqual('16/01/2017 00:00:00')
   })
 })
