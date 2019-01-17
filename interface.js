@@ -14,7 +14,7 @@ function init() {
     oneMessage.innerText = `${message.content} -- ${message.time}`
 
     var log = document.getElementById('messageLog')
-    log.appendChild(oneMessage)
+    log.prepend(oneMessage)
 
     messageInput.value = ''
   }
