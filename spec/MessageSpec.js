@@ -1,4 +1,4 @@
-/* global describe, it, expect */
+/* global describe, it, expect, beforeEach */
 'use strict'
 
 describe('Message', function () {
@@ -7,11 +7,11 @@ describe('Message', function () {
 
   beforeEach(function () {
     time = new Date(1484524800000)
-    message = new Message("test message", time)
+    message = new Message('test message', time)
   })
 
   it('should create a message with content', function () {
-    expect(message.content).toEqual("test message")
+    expect(message.content).toEqual('test message')
   })
 
   it('should create a message with a time of creation', function () {
